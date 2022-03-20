@@ -35,7 +35,9 @@
                   Pages: {{ data.data.data.pages }} Year:
                   {{ data.data.data.year }}
                   <br />
-                  <a :href="data.data.data.link"> More infomation in Wiki : </a>
+                  <a :href="data.data.data.link" target="_blank">
+                    More infomation in Wiki :
+                  </a>
                   <!-- <a href=""+{{data.data.data.link}}+""></a>-->
                   <!-- More infomation in Wiki :  -->
                   <!-- {{ data.data.data.link }} -->

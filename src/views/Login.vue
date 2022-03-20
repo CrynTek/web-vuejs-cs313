@@ -12,14 +12,14 @@
                 <v-form>
                   <v-text-field
                     name="login"
-                    label="Email"
+                    label="Email:admin@gamil.com"
                     type="email"
                     v-model="email"
                   ></v-text-field>
                   <v-text-field
                     id="password"
                     name="password"
-                    label="Password"
+                    label="Password:123456"
                     type="password"
                     v-model="password"
                   ></v-text-field>
@@ -64,7 +64,7 @@ export default {
           const user = userCredential.user;
           console.log("User=" + user);
           // ...
-          this.$router.replace("/test");
+          this.$router.replace("/admin");
           // await updateProfile ()
           //   this.$router.push("/about");
         })

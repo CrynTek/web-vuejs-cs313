@@ -4,7 +4,7 @@
     <!-- <li v-if="login">
       <Routerlink to="/login">login</Routerlink>
     </li> -->
-    <h1>{{ uemail }}</h1>
+    <h1>{{ uemail }} + Login สำเร็จ</h1>
     <h1>{{ uid }}</h1>
   </div>
 </template>

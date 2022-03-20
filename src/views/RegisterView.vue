@@ -46,10 +46,10 @@
 
 <script>
 import {
-  getAuth,
+  // getAuth,
   onAuthStateChanged,
-  createUserWithEmailAndPassword,
-  updateProfile,
+  // createUserWithEmailAndPassword,
+  // updateProfile,
 } from "firebase/auth";
 import { auth } from "../plugins/firebaseInit";
 export default {
@@ -70,22 +70,7 @@ export default {
       }
     });
   },
-  methods: {
-    onSubmit(event) {
-      event.preventDefult();
-      const auth = getAuth();
-      createUserWithEmailAndPassword(auth, this.email, this.password)
-        .then(async (userCredential) => {
-          // Signed in
-          await updateProfile(userCredential, { displayName: this.form.name });
-          this.$router.push("/home").catch(() => {});
-        })
-
-        .catch((error) => {
-          alert(error.message);
-        });
-    },
-  },
+  methods: {},
 };
 </script>
 

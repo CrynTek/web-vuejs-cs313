@@ -3,7 +3,7 @@
     <v-app-bar app color="#64C4ED" dark>
       <!-- class="d-flex align-center align-content-center" -->
       <div class="d-flex align-center align-content-center">
-        <Router-link to="/"><h1>100+ Best books</h1></Router-link>
+        <Router-link to="/"><h1>Git recommed</h1></Router-link>
       </div>
 
       <v-spacer></v-spacer>
@@ -18,7 +18,7 @@
         <li class="mr-2">
           <v-hover>
             <v-btn color="warning">
-              <Router-link to="/about">About</Router-link>
+              <Router-link to="/test">About</Router-link>
             </v-btn>
           </v-hover>
         </li>
@@ -29,13 +29,13 @@
             </v-btn>
           </v-hover>
         </li>
-        <li class="mr-2">
+        <!-- <li class="mr-2">
           <v-hover>
             <v-btn color="warning">
               <Router-link to="/test">Test</Router-link>
             </v-btn>
           </v-hover>
-        </li>
+        </li> -->
       </ul>
     </v-app-bar>
 
