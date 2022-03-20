@@ -1,8 +1,8 @@
 <template>
   <div>
     <h1>sadasasd</h1>
-    <!-- <button @click="aaaa()">sadasdsad</button>
-    {{}} -->
+    <button @click="aaaa()">sadasdsad</button>
+    {{}}
   </div>
 </template>
 
@@ -12,6 +12,7 @@ import { storage, db } from "../plugins/firebaseInit";
 import { collection, doc, setDoc } from "firebase/firestore";
 
 export default {
+  name: "upload",
   data() {
     return {
       datazaza: [
@@ -1063,7 +1064,7 @@ export default {
     },
     async profile(i, linkfile, data) {
       console.log(i);
-      const citiesRef = collection(db, "book-info");
+      const citiesRef = collection(db, "BookInfo");
       await setDoc(doc(citiesRef, i + ""), {
         data: data,
         linkfile: linkfile,

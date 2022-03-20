@@ -1,44 +1,63 @@
 <template>
   <v-app>
     <v-app-bar app color="#64C4ED" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+      <!-- class="d-flex align-center align-content-center" -->
+      <div class="d-flex align-center align-content-center">
+        <Router-link to="/"><h1>100+ Best books</h1></Router-link>
       </div>
 
       <v-spacer></v-spacer>
-      <v-btn> <Router-link to="/">Home</Router-link></v-btn>
-      <v-btn> <Router-link to="/about">About</Router-link> </v-btn>
-      <v-btn> <Router-link to="/login">Login/Register</Router-link> </v-btn>
-      <!-- <v-btn> <Router-link to="/showpage">show</Router-link> </v-btn> -->
+      <ul class="flex-1-1-auto d-flex align-center justify-end">
+        <li class="mr-2">
+          <v-hover>
+            <v-btn color="warning">
+              <Router-link to="/">Home</Router-link>
+            </v-btn>
+          </v-hover>
+        </li>
+        <li class="mr-2">
+          <v-hover>
+            <v-btn color="warning">
+              <Router-link to="/about">About</Router-link>
+            </v-btn>
+          </v-hover>
+        </li>
+        <li class="mr-2">
+          <v-hover>
+            <v-btn color="warning">
+              <Router-link to="/login">Login</Router-link>
+            </v-btn>
+          </v-hover>
+        </li>
+        <li class="mr-2">
+          <v-hover>
+            <v-btn color="warning">
+              <Router-link to="/test">Test</Router-link>
+            </v-btn>
+          </v-hover>
+        </li>
+      </ul>
     </v-app-bar>
 
     <v-main>
       <router-view />
-      <h2>hwfheo</h2>
     </v-main>
   </v-app>
 </template>
 
 <script>
 export default {
-  name: "header",
+  name: "Header",
 };
 </script>
 
-<style></style>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  font-family: "Courier New", Courier, monospace;
+}
+</style>

@@ -1,7 +1,5 @@
 <template>
-  <v-container>
-    <h1>สวัสดี</h1>
-  </v-container>
+  <v-container> </v-container>
 </template>
 
 <script>
